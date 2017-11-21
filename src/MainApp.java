@@ -6,18 +6,22 @@ import processing.core.PApplet;
 
 public class MainApp extends PApplet {
 
+    // Some temporary constants for point calculation.
     private static final int DISTANCE_WIDTH_X = 25;
     private static final int DISTANCE_WIDTH_Y = 0;
     private static final int DISTANCE_HEIGHT_X = 15;
     private static final int DISTANCE_HEIGHT_Y = 15;
     private static final int CIRCLE_DIAMETER = 10;
 
+    private static final int INPUT_WIDTH = 26;
+    private static final int INPUT_HEIGHT = 14;
+
     public static void main(String[] args) {
         PApplet.main("MainApp");
     }
 
     public void settings() {
-        size(800, 800);
+        size(1200, 800);
     }
 
     /**
@@ -36,18 +40,18 @@ public class MainApp extends PApplet {
         background(18);
 
         // Draw weights
-        drawWeights(100, 100, 20, 10,
+        drawWeights(100, 100, 26, 14,
                 293, 468, 10, 1);
 
         // Draw input layers
-        draw2dLayer(100, 100, 20, 10);
+        draw2dLayer(100, 100, 26, 14);
 
         // Draw output layers
         draw2dLayer(293, 468, 10, 1);
     }
 
     private void grayBrush() {
-        stroke(137, 137, 137,100);
+        stroke(137, 137, 137,10);
     }
 
     private void grayCicle() {
@@ -77,6 +81,13 @@ public class MainApp extends PApplet {
         }
     }
 
+    /**
+     *
+     * @param x
+     * @param y
+     * @param numNeuronsWidth
+     * @param numNeuronsHeight
+     */
     private void draw2dLayer(int x, int y, int numNeuronsWidth, int numNeuronsHeight) {
 
         // Dark fill
