@@ -13,3 +13,5 @@ Simply specify different layers and the weights connecting them.
 There will also be specific drawer that you can extend. These include:
 * Parallel drawer
 * Perspective drawer
+
+This library will also be contributed everyday.
