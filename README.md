@@ -15,3 +15,17 @@ There will also be specific drawer that you can extend. These include:
 * Perspective drawer
 
 This library will also be contributed everyday.
+
+## Current available layers
+
+### 1D Layer
+
+For inputs in which each value has no positional relationship with each other.
+
+### 2D Layer
+
+For inputs in 2 dimensions such as image pixels or position maps.
+
+### 3D Layer
+
+For inputs in 3 dimensions such as vector fields.
