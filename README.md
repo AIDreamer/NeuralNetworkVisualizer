@@ -29,3 +29,7 @@ For inputs in 2 dimensions such as image pixels or position maps.
 ### 3D Layer
 
 For inputs in 3 dimensions such as vector fields.
+
+## Base Layer
+
+This layer can be extended to create new layers.
